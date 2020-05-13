@@ -1,0 +1,19 @@
+{
+  "name": "mynodeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thealiflab/ServerSideJS.git"
+  },
+  "author": "Alif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thealiflab/ServerSideJS/issues"
+  },
+  "homepage": "https://github.com/thealiflab/ServerSideJS#readme"
+}
