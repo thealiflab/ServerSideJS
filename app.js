@@ -3,14 +3,14 @@ const fs = require('fs');
 
 var server = http.createServer(function(req, res) {
     
-    var successHtml = __dirname + "/success.html";
+    var form = __dirname + "/form.html";
     
-    fs.access(successHtml,fs.constants.F_OK, err => {
+    fs.access(form,fs.constants.F_OK, err => {
         //check file
-        console.log(`${successHtml} ${err ? "HTML file does not exist" : "File Exist"}`);
+        console.log(`${form} ${err ? "HTML file does not exist" : "File Exist"}`);
     });
     
-    fs.readFile(successHtml, function(err,content){
+    fs.readFile(form, function(err,content){
         if(err){
             res.writeHead(404,{"Content-type": "text/html"});
             res.end("<h1>No such HTML file</h1>");
